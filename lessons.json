@@ -1,0 +1,5 @@
+[
+  {"id": 101, "num": 101, "subjectName": "Math", "lessonType": "Lection", "classroom": 1201},
+  {"id": 102, "num": 102, "subjectName": "Physics", "lessonType": "Practice", "classroom": 3213},
+  {"id": 103, "num": 103, "subjectName": "Chemistry", "lessonType": "Lab", "classroom": 4304}
+]

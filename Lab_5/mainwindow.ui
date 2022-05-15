@@ -1,0 +1,330 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>670</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout">
+      <item>
+       <widget class="QPushButton" name="chooseFile">
+        <property name="text">
+         <string>File</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="choose_JSON">
+        <property name="text">
+         <string>JSON</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLineEdit" name="editSearch">
+        <property name="text">
+         <string>Search in format: &quot;Physics;Exam;1205&quot; (Place spaces instead of missing params)</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="buttonFind">
+        <property name="text">
+         <string>Find</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <widget class="myTextBrowser" name="textOut"/>
+    </item>
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout_2">
+      <item>
+       <widget class="QLabel" name="label_15">
+        <property name="text">
+         <string>Category</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QComboBox" name="comboCat">
+        <item>
+         <property name="text">
+          <string>Lesson</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Online</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Open</string>
+         </property>
+        </item>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="label">
+        <property name="text">
+         <string>Subject</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLineEdit" name="lineSubject"/>
+      </item>
+      <item>
+       <widget class="QLabel" name="label_2">
+        <property name="text">
+         <string>Type</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QComboBox" name="comboType">
+        <item>
+         <property name="text">
+          <string>Lection</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Practice</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Lab</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Exam</string>
+         </property>
+        </item>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="label_3">
+        <property name="text">
+         <string>Classroom</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLineEdit" name="lineClassroom"/>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout_4">
+      <item>
+       <widget class="QLabel" name="label_9">
+        <property name="text">
+         <string>Platform</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QComboBox" name="comboPlatformOnline">
+        <item>
+         <property name="text">
+          <string>Zoom</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Moodle</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Discord</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Skype</string>
+         </property>
+        </item>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="label_8">
+        <property name="text">
+         <string>Link</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLineEdit" name="lineLink"/>
+      </item>
+      <item>
+       <widget class="QLabel" name="label_14">
+        <property name="text">
+         <string>Students num</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLineEdit" name="lineStudentsNum"/>
+      </item>
+      <item>
+       <widget class="QLabel" name="label_11">
+        <property name="text">
+         <string>Teacher</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLineEdit" name="lineTeacher"/>
+      </item>
+      <item>
+       <widget class="QPushButton" name="buttonAdd">
+        <property name="text">
+         <string>Add</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout_3">
+      <item>
+       <widget class="QLabel" name="label_4">
+        <property name="text">
+         <string>Lesson category</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QComboBox" name="comboCatRepr">
+        <item>
+         <property name="text">
+          <string>Common</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Online</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Open</string>
+         </property>
+        </item>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="label_5">
+        <property name="text">
+         <string>ID</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLineEdit" name="lineID"/>
+      </item>
+      <item>
+       <widget class="QPushButton" name="buttonRepr">
+        <property name="text">
+         <string>Repr lesson</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>800</width>
+     <height>21</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>myTextBrowser</class>
+   <extends>QTextBrowser</extends>
+   <header>mytextbrowser.h</header>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>buttonFind</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>findLesson()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>748</x>
+     <y>44</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>710</x>
+     <y>58</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>buttonAdd</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>addLesson()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>775</x>
+     <y>603</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>722</x>
+     <y>626</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>buttonRepr</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>reprLesson()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>768</x>
+     <y>631</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>758</x>
+     <y>641</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>findLesson()</slot>
+  <slot>addLesson()</slot>
+  <slot>reprLesson()</slot>
+ </slots>
+</ui>
